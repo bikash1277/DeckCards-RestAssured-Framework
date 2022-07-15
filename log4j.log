@@ -1,0 +1,45 @@
+INFO	2022-07-15 10:30:29,198	0	TestBase.BaseClass	[main]	BaseURI :: http://deckofcardsapi.com/api/deck
+INFO	2022-07-15 10:30:29,211	13	Test.CreateDeckTest	[main]	 ------> Adding jokers to a new deck without shuffle
+INFO	2022-07-15 10:30:33,037	3839	Test.CreateDeckTest	[main]	 ------> Drawing A new deck with shuffle
+INFO	2022-07-15 10:30:33,606	4408	Test.CreateDeckTest	[main]	 ------> Drawing A new deck without shuffle
+INFO	2022-07-15 10:30:34,148	4950	Test.CreateDeckTest	[main]	 ------> Adding jokers to a new deck with shuffle
+INFO	2022-07-15 10:30:34,753	5555	TestBase.BaseClass	[main]	BaseURI :: http://deckofcardsapi.com/api/deck
+INFO	2022-07-15 10:30:34,767	5569	Test.DrawCardsTest	[main]	 ------> drawing a cards from a new deck of cards without shuffle
+INFO	2022-07-15 10:30:35,968	6770	Test.DrawCardsTest	[main]	 ------> Drawing 53 cards
+INFO	2022-07-15 10:30:37,721	8523	Test.DrawCardsTest	[main]	 ------> Validating response
+INFO	2022-07-15 10:30:37,728	8530	Test.DrawCardsTest	[main]	 ------> Drawing 5 cards
+INFO	2022-07-15 10:30:38,058	8860	Test.DrawCardsTest	[main]	 ------> Deserialize JSON into Page
+INFO	2022-07-15 10:30:38,068	8870	Test.DrawCardsTest	[main]	 ------> Drawing 5.5 cards 
+INFO	2022-07-15 10:30:38,426	9228	Test.DrawCardsTest	[main]	 ------> drawing a cards from a new deck of cards with shuffle
+INFO	2022-07-15 10:30:39,199	10001	Test.DrawCardsTest	[main]	 ------> drawing multiple cards from a new deck of cards without shuffle
+INFO	2022-07-15 10:30:40,026	10828	Test.DrawCardsTest	[main]	 ------> Adding jokers to a new deck without shuffle
+INFO	2022-07-15 10:33:56,352	0	TestBase.BaseClass	[main]	BaseURI :: http://deckofcardsapi.com/api/deck
+INFO	2022-07-15 10:33:56,371	19	Test.CreateDeckTest	[main]	 ------> Adding jokers to a new deck without shuffle
+INFO	2022-07-15 10:33:59,876	3524	Test.CreateDeckTest	[main]	 ------> Drawing A new deck with shuffle
+INFO	2022-07-15 10:34:00,419	4067	Test.CreateDeckTest	[main]	 ------> Drawing A new deck without shuffle
+INFO	2022-07-15 10:34:00,936	4584	Test.CreateDeckTest	[main]	 ------> Adding jokers to a new deck with shuffle
+INFO	2022-07-15 10:34:01,466	5114	TestBase.BaseClass	[main]	BaseURI :: http://deckofcardsapi.com/api/deck
+INFO	2022-07-15 10:34:01,468	5116	Test.DrawCardsTest	[main]	 ------> drawing a cards from a new deck of cards without shuffle
+INFO	2022-07-15 10:34:02,666	6314	Test.DrawCardsTest	[main]	 ------> Drawing 53 cards
+INFO	2022-07-15 10:34:03,572	7220	Test.DrawCardsTest	[main]	 ------> Validating response
+INFO	2022-07-15 10:34:03,580	7228	Test.DrawCardsTest	[main]	 ------> Drawing 5 cards
+INFO	2022-07-15 10:34:03,978	7626	Test.DrawCardsTest	[main]	 ------> Deserialize JSON into Page
+INFO	2022-07-15 10:34:03,989	7637	Test.DrawCardsTest	[main]	 ------> Drawing 5.5 cards 
+INFO	2022-07-15 10:34:04,390	8038	Test.DrawCardsTest	[main]	 ------> drawing a cards from a new deck of cards with shuffle
+INFO	2022-07-15 10:34:05,180	8828	Test.DrawCardsTest	[main]	 ------> drawing multiple cards from a new deck of cards without shuffle
+INFO	2022-07-15 10:34:05,986	9634	Test.DrawCardsTest	[main]	 ------> Adding jokers to a new deck without shuffle
+INFO	2022-07-15 10:44:02,360	0	TestBase.BaseClass	[main]	BaseURI :: http://deckofcardsapi.com/api/deck
+INFO	2022-07-15 10:44:02,376	16	Test.CreateDeckTest	[main]	 ------> Adding jokers to a new deck without shuffle
+INFO	2022-07-15 10:44:06,018	3658	Test.CreateDeckTest	[main]	 ------> Drawing A new deck with shuffle
+INFO	2022-07-15 10:44:06,527	4167	Test.CreateDeckTest	[main]	 ------> Drawing A new deck without shuffle
+INFO	2022-07-15 10:44:07,038	4678	Test.CreateDeckTest	[main]	 ------> Adding jokers to a new deck with shuffle
+INFO	2022-07-15 10:44:07,576	5216	TestBase.BaseClass	[main]	BaseURI :: http://deckofcardsapi.com/api/deck
+INFO	2022-07-15 10:44:07,578	5218	Test.DrawCardsTest	[main]	 ------> drawing a cards from a new deck of cards without shuffle
+INFO	2022-07-15 10:44:08,670	6310	Test.DrawCardsTest	[main]	 ------> Drawing 53 cards
+INFO	2022-07-15 10:44:09,659	7299	Test.DrawCardsTest	[main]	 ------> Validating response
+INFO	2022-07-15 10:44:09,673	7313	Test.DrawCardsTest	[main]	 ------> Drawing 5 cards
+INFO	2022-07-15 10:44:10,076	7716	Test.DrawCardsTest	[main]	 ------> Deserialize JSON into Page
+INFO	2022-07-15 10:44:10,089	7729	Test.DrawCardsTest	[main]	 ------> Drawing 5.5 cards 
+INFO	2022-07-15 10:44:10,437	8077	Test.DrawCardsTest	[main]	 ------> drawing a cards from a new deck of cards with shuffle
+INFO	2022-07-15 10:44:11,237	8877	Test.DrawCardsTest	[main]	 ------> drawing multiple cards from a new deck of cards without shuffle
+INFO	2022-07-15 10:44:12,042	9682	Test.DrawCardsTest	[main]	 ------> Adding jokers to a new deck without shuffle
