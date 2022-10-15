@@ -17,7 +17,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import page.Draw;
 
-public class DrawCardsTest extends BaseClass {
+ class DrawCardsTest extends BaseClass {
 
 	private static final Logger logger = LogManager.getLogger(DrawCardsTest.class);
 
@@ -26,7 +26,7 @@ public class DrawCardsTest extends BaseClass {
 	 */
 	@Test
 	@DisplayName("Draw a card from new deck without shuffle")
-	public void testDrawOneCardFromDeckWithoutSuffle() {
+	void testDrawOneCardFromDeckWithoutSuffle() {
 		logger.info(" ------> Adding jokers to a new deck without shuffle");
 		Response response = given().log().all().accept(ContentType.JSON).basePath(EndPoints.NEW.getEndPoint()).when()
 				.get();
@@ -48,7 +48,7 @@ public class DrawCardsTest extends BaseClass {
 	 */
 	@Test
 	@DisplayName("Draw multiple cards from a new deck of cards without shuffle")
-	public void testDrawMultipleCardFromDeckWithoutSuffle() {
+	void testDrawMultipleCardFromDeckWithoutSuffle() {
 		logger.info(" ------> drawing multiple cards from a new deck of cards without shuffle");
 		Response response = given().log().all().accept(ContentType.JSON).basePath(EndPoints.NEW.getEndPoint()).when()
 				.get();
@@ -71,7 +71,7 @@ public class DrawCardsTest extends BaseClass {
 	 */
 	@Test
 	@DisplayName("Draw a card from new deck with shuffle")
-	public void testDrawOneCardFromDeckWithSuffle() {
+	void testDrawOneCardFromDeckWithSuffle() {
 		logger.info(" ------> drawing a cards from a new deck of cards with shuffle");
 		Response response = given().log().all().accept(ContentType.JSON)
 				.basePath(EndPoints.NEW.getEndPoint() + EndPoints.SHUFFLE.getEndPoint()).when().get();
@@ -93,7 +93,7 @@ public class DrawCardsTest extends BaseClass {
 	 */
 	@Test
 	@DisplayName("Draw multiple cards from a new deck of cards with shuffle")
-	public void testDrawMultipleCardFromDeckWithSuffle() {
+	void testDrawMultipleCardFromDeckWithSuffle() {
 		logger.info(" ------> drawing a cards from a new deck of cards without shuffle");
 		Response response = given().log().all().accept(ContentType.JSON)
 				.basePath(EndPoints.NEW.getEndPoint() + EndPoints.SHUFFLE.getEndPoint()).when().get();
@@ -119,7 +119,7 @@ public class DrawCardsTest extends BaseClass {
 
 	@Test
 	@DisplayName("Draw 5 cards , Validate remaining are 47 ")
-	public void drawFiveCards() {
+	void drawFiveCards() {
 
 		logger.info(" ------> Drawing 5 cards");
 		Response response = given().log().all().accept(ContentType.JSON)
@@ -144,7 +144,7 @@ public class DrawCardsTest extends BaseClass {
 	 */
 	@Test
 	@DisplayName("Draw more than 52 without jokers, validate error message")
-	public void drawFiftyThreeCards() {
+	void drawFiftyThreeCards() {
 		logger.info(" ------> Drawing 53 cards");
 		Response response = given().log().all().accept(ContentType.JSON)
 				.basePath(EndPoints.NEW.getEndPoint() + EndPoints.DRAW.getEndPoint()).queryParam("count", 53).when()
@@ -163,7 +163,7 @@ public class DrawCardsTest extends BaseClass {
 	 */
 	@Test
 	@DisplayName("Drawing 5,5 cards from the deck")
-	public void DoubleValueQueyParam() {
+	void DoubleValueQueyParam() {
 
 		logger.info(" ------> Drawing 5.5 cards ");
 		try {

@@ -7,13 +7,16 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledIf;
+import org.junit.jupiter.params.ParameterizedTest;
 
 import TestBase.BaseClass;
 import endPoints.EndPoints;
 import io.restassured.http.ContentType;
 
-public class CreateDeckTest extends BaseClass {
+class CreateDeckTest extends BaseClass {
 
     private static final Logger logger = LogManager.getLogger(CreateDeckTest.class);
 
@@ -22,7 +25,7 @@ public class CreateDeckTest extends BaseClass {
 	 */
 	@Test
 	@DisplayName("Creating a new Deck with shuffle")
-	public void testCreateDeckWithShuffle() {
+	void testCreateDeckWithShuffle() {
 		logger.info(" ------> Drawing A new deck with shuffle");
 		given().log().all().accept(ContentType.JSON)
 				.basePath(EndPoints.NEW.getEndPoint() + EndPoints.SHUFFLE.getEndPoint()).when().get().then()
@@ -33,9 +36,9 @@ public class CreateDeckTest extends BaseClass {
 	 /**
 		 * Testing for drawing A new deck without shuffle
 		 */
-		@Test
+		@Test 
 		@DisplayName("Draw A new deck without shuffle")
-		public void testCreateDeckWithoutShuffle() {
+		void testCreateDeckWithoutShuffle() {
 			logger.info(" ------> Drawing A new deck without shuffle");
 			given().log().all().accept(ContentType.JSON).basePath(EndPoints.NEW.getEndPoint()).when().get().then()
 					.assertThat().contentType("application/json").statusCode(RESPONSE_STATUS_CODE_200).body("success", equalTo(true))
@@ -50,7 +53,7 @@ public class CreateDeckTest extends BaseClass {
 		 */
 		@Test
 		@DisplayName("Adding jokers to a new deck without shuffle")
-		public void testCreateWithJokersWithoutShuffle() {
+		 void testCreateWithJokersWithoutShuffle() {
 			logger.info(" ------> Adding jokers to a new deck without shuffle");
 			given().log().all().accept(ContentType.JSON).basePath(EndPoints.NEW.getEndPoint())
 					.queryParam("jokers_enabled", true).when().get().then().assertThat().contentType("application/json")
@@ -62,7 +65,7 @@ public class CreateDeckTest extends BaseClass {
 		 */
 		@Test
 		@DisplayName("Adding Jokers to new Deck with shuffle")
-		public void testCreateWithJokersWithShuffle() {
+		void testCreateWithJokersWithShuffle() {
 			logger.info(" ------> Adding jokers to a new deck with shuffle");
 			given().log().all().accept(ContentType.JSON)
 					.basePath(EndPoints.NEW.getEndPoint() + EndPoints.SHUFFLE.getEndPoint())
